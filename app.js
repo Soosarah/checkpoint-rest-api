@@ -4,7 +4,7 @@ const express = require('express');
 const {connectDB} = require('./config/db.js');
 const cors = require('cors');
 const corsOption={
-    origin:['http://localhost:5174','https://checkpoint-rest-api-95g0.onrender.com'],
+    origin:['http://localhost:5174','https://checkpoint-rest-api-6orp.onrender.com'],
     credentials:true,
 };
 // Connection to database
