@@ -3,11 +3,13 @@ const User = require("../models/User");
   const JWT = require('jsonwebtoken');
 
 
- const allusers = async (req, res) => {
+ const allusers = async (req, res) => { console.log("err");
     try {
         const users = await User.find();
         res.json(users);
+        console.log(users);
     } catch (err) {
+        console.log(err);
         res.status(500).json({ message: err.message });
     }
 }
